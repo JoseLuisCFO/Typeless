@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-58X01C8HEN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-58X01C8HEN');
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Dictation App: Clean Text From Your Voice | Typeless</title>
@@ -337,5 +346,17 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
   </div>
 </footer>
 
+<script>
+  // Track every Typeless button click in Google Analytics, by section and language
+  document.querySelectorAll('a[href*="typeless.com"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var s = a.closest('section');
+      gtag('event', 'affiliate_click', {
+        link_section: s ? s.id || s.className : 'unknown',
+        page_language: document.documentElement.lang
+      });
+    });
+  });
+</script>
 </body>
 </html>
