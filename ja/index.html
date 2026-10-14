@@ -140,6 +140,18 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
 :lang(ja) h1,:lang(ja) h2,:lang(ja) h3,:lang(zh) h1,:lang(zh) h2,:lang(zh) h3{word-break:keep-all;overflow-wrap:anywhere}
 @media(max-width:480px){.topbar .logo{font-size:16px}.topbar .lang{font-size:13px}.topbar .lang a{padding:4px 1px}}
 @media(max-width:350px){.topbar .logo{display:none}.topbar .wrap{justify-content:center}}
+.tip{font-size:15px;line-height:1.5;color:#115e59;font-weight:600;margin:12px auto 0;max-width:640px}
+.vs-wrap{overflow-x:auto;margin-top:8px}
+table.vs{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--line);font-size:17px;line-height:1.45}
+table.vs th,table.vs td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+table.vs thead th{background:#f8fafc;font-size:16px}
+table.vs tbody tr:last-child th,table.vs tbody tr:last-child td{border-bottom:0}
+table.vs tbody th{font-weight:700;width:30%}
+table.vs .hl{background:var(--good);font-weight:700;color:#14532d}
+table.vs thead .hl{background:var(--brand);color:#fff}
+.vs-note{font-size:14px;color:var(--muted);margin:12px 0 0}
+table.vs{table-layout:fixed}table.vs thead th:nth-child(1){width:26%}table.vs thead th:nth-child(2){width:20%}table.vs thead th:nth-child(3){width:25%}table.vs thead th:nth-child(4){width:29%}table.vs th,table.vs td{overflow-wrap:break-word}
+@media(max-width:600px){table.vs,table.vs thead th{font-size:13px}table.vs th,table.vs td{padding:10px 5px;hyphens:auto}}
 </style>
 </head>
 <body>
@@ -160,6 +172,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
     <h1>AI音声入力アプリ：<wbr>話すだけで、<wbr>整った<wbr>文章に</h1>
     <p class="lead">Typelessが、あなたの声をほぼどのアプリでもそのまま送れる文章に。「えーと」「あのー」は自動でカット。打ち直しも不要です。</p>
     <a class="btn" href="https://www.typeless.com/?via=NiceJobs" rel="sponsored noopener" target="_blank">Typelessを無料で試す</a>
+    <p class="tip">おすすめ：こちらのリンクからTypeless公式サイトでダウンロードし、まずパソコンにインストール。そのあと同じアカウントでスマホやiPadなどに追加しましょう。</p>
     <p class="disclosure">【PR】私たちは毎日Typelessを使い、効果があるからおすすめしています。このリンクから登録すると紹介料を受け取りますが、お客様の追加費用は一切ありません。</p>
     <img src="/images/onsei-nyuryoku-ai.webp" width="1600" height="900" alt="イラスト：リラックスして話す女性に、ロボットのアシスタントが送信準備のできた文章をパソコンで見せている。もう、打たない。話すだけ。" fetchpriority="high">
   </div>
@@ -189,18 +202,28 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
       <li><b>「えーと」「あのー」を自動でカット。</b>言い直しもきれいに整えます。</li>
       <li><b>いつものアプリで使える。</b>メール、Slack、LINE、ChatGPT、メモ、ドキュメントなど。</li>
       <li><b>アプリに合わせて文体を調整。</b>チャットではカジュアルに、メールではきちんと。</li>
-      <li><b>声で編集できる。</b>文章を選んで「短くして」「丁寧にして」「英語に翻訳して」と話すだけ。</li>
+      <li><b>声で編集できる。</b>文章を選んで「短くして」「丁寧にして」と話すだけ。</li>
+      <li><b>翻訳もワンステップ。</b>文章を選んで「英語に翻訳して」と言うだけ。別のツールにコピペする必要はありません。</li>
       <li><b>100以上の言語に対応。</b>日本語と英語など、最大3言語を同じ文の中でも混ぜて話せます。</li>
     </ul>
   </div>
 </section>
 
-<section class="alt" id="how-it-works">
+<section class="alt" id="compare">
+  <div class="wrap">
+    <h2>速いだけでは足りない。<wbr>整っているから、<wbr>時間が浮く。</h2>
+    <p class="lead">MacやWindowsに標準の音声入力は、タイピングより速く入力できます。でもその後、「えーと」や言い直し、文体の修正に時間がかかります。Typelessは話しながら文章を整えるので、見直しが少なくて済みます。</p>
+    <div class="vs-wrap"><table class="vs"><thead><tr><th></th><th scope="col">手打ち</th><th scope="col">標準の音声入力</th><th scope="col" class="hl">Typeless</th></tr></thead><tbody><tr><th scope="row">文字を入力する速さ</th><td>遅い</td><td>速い</td><td class="hl">速い</td></tr><tr><th scope="row">「えーと」や言い直し</th><td>—</td><td>そのまま入力される</td><td class="hl">自動でカット</td></tr><tr><th scope="row">アプリに合わせた文体</th><td>手作業</td><td>手作業</td><td class="hl">自動</td></tr><tr><th scope="row">声で編集・翻訳</th><td>できない</td><td>一部のみ</td><td class="hl">できる</td></tr><tr><th scope="row">送信前の修正</th><td>打ち間違い</td><td>えーと・文体・言い直し</td><td class="hl">さっと確認するだけ</td></tr></tbody></table></div>
+    <p class="vs-note">標準の音声入力＝MacのApple音声入力、またはWindowsの音声入力。</p>
+  </div>
+</section>
+
+<section id="how-it-works">
   <div class="wrap grid2 flip">
     <div>
       <h2>使い方は<wbr>かんたん<wbr>3ステップ</h2>
       <ol class="steps">
-        <li><b>インストール。</b>macOS、Windows、iOS、Androidに対応しています。</li>
+        <li><b>Typelessの公式サイトからダウンロード。</b><a href="https://www.typeless.com/?via=NiceJobs" rel="sponsored noopener" target="_blank">こちらのリンク</a>からTypelessの公式サイトへ。まずパソコン（MacまたはWindows）にダウンロードしてインストールし、そのあと同じアカウントでスマホやiPadなどにも追加します。</li>
         <li><b>話す。</b>入力欄をクリックして、同僚に話すように話すだけ。</li>
         <li><b>送信。</b>Typelessが整えた文章を確認して、送信します。</li>
       </ol>
@@ -209,7 +232,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
   </div>
 </section>
 
-<section id="who-its-for">
+<section class="alt" id="who-its-for">
   <div class="wrap">
     <h2>Typelessは<wbr>こんな方に<wbr>おすすめ</h2>
     <div class="cards">
@@ -240,9 +263,9 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
         </ul>
       </article>
       <article class="card">
-        <h3>日本語と英語を<wbr>使い分ける方</h3>
+        <h3>複数の言語を<wbr>使う方<wbr>（英語・日本語・中国語など）</h3>
         <ul class="checks">
-          <li>ひとつのツールで、日本語も英語も。</li>
+          <li>ひとつのツールで、すべての言語に対応。</li>
           <li>日本語と英語、さらにもう1言語を同じ文の中で。</li>
           <li>選んだ文章を、声のコマンドで翻訳。</li>
         </ul>
@@ -251,7 +274,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
   </div>
 </section>
 
-<section class="alt" id="dictate-to-ai">
+<section id="dictate-to-ai">
   <div class="wrap">
     <div class="grid2">
       <div>
@@ -337,6 +360,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
     <h2>あなたの声が、<wbr>いちばん速い<wbr>キーボード</h2>
     <p class="lead">メールも、提案書も、職務経歴書も、AIへのプロンプトも、話すだけ。今日からTypelessを無料で試そう。</p>
     <a class="btn" href="https://www.typeless.com/?via=NiceJobs" rel="sponsored noopener" target="_blank">Typelessを無料で試す</a>
+    <p class="tip">おすすめ：こちらのリンクからTypeless公式サイトでダウンロードし、まずパソコンにインストール。そのあと同じアカウントでスマホやiPadなどに追加しましょう。</p>
   </div>
 </section>
 

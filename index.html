@@ -140,6 +140,18 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
 :lang(ja) h1,:lang(ja) h2,:lang(ja) h3,:lang(zh) h1,:lang(zh) h2,:lang(zh) h3{word-break:keep-all;overflow-wrap:anywhere}
 @media(max-width:480px){.topbar .logo{font-size:16px}.topbar .lang{font-size:13px}.topbar .lang a{padding:4px 1px}}
 @media(max-width:350px){.topbar .logo{display:none}.topbar .wrap{justify-content:center}}
+.tip{font-size:15px;line-height:1.5;color:#115e59;font-weight:600;margin:12px auto 0;max-width:640px}
+.vs-wrap{overflow-x:auto;margin-top:8px}
+table.vs{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--line);font-size:17px;line-height:1.45}
+table.vs th,table.vs td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+table.vs thead th{background:#f8fafc;font-size:16px}
+table.vs tbody tr:last-child th,table.vs tbody tr:last-child td{border-bottom:0}
+table.vs tbody th{font-weight:700;width:30%}
+table.vs .hl{background:var(--good);font-weight:700;color:#14532d}
+table.vs thead .hl{background:var(--brand);color:#fff}
+.vs-note{font-size:14px;color:var(--muted);margin:12px 0 0}
+table.vs{table-layout:fixed}table.vs thead th:nth-child(1){width:26%}table.vs thead th:nth-child(2){width:20%}table.vs thead th:nth-child(3){width:25%}table.vs thead th:nth-child(4){width:29%}table.vs th,table.vs td{overflow-wrap:break-word}
+@media(max-width:600px){table.vs,table.vs thead th{font-size:13px}table.vs th,table.vs td{padding:10px 5px;hyphens:auto}}
 </style>
 </head>
 <body>
@@ -160,6 +172,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
     <h1>AI Dictation App: Speak and Get Clean, Polished Text</h1>
     <p class="lead">Typeless turns your voice into ready-to-send text in almost any app. No "ums." No retyping.</p>
     <a class="btn" href="https://www.typeless.com/?via=NiceJobs" rel="sponsored noopener" target="_blank">Try Typeless Free</a>
+    <p class="tip">Tip: get Typeless from its website through our link and install it on your computer first. Then add your phone, iPad, and other devices with the same account.</p>
     <p class="disclosure">We use Typeless every day and recommend it because it works. If you sign up through this link, we earn, and we both win, at no extra cost to you for a product we use.</p>
     <img src="/images/ai-dictation-app.webp" width="1600" height="900" alt="Illustration: relaxed woman talks while a friendly robot assistant shows her ready-to-send text on a laptop. Stop typing. Start talking." fetchpriority="high">
   </div>
@@ -173,7 +186,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
         <li><b>You think faster than you type.</b> Your best ideas get cut short.</li>
         <li><b>Writing eats your day.</b> Emails, proposals, and reports take hours.</li>
         <li><b>Short typed prompts get weak AI answers.</b> You leave out the details that matter.</li>
-        <li><b>Typing and spelling drain energy,</b> especially if you have dyslexia.</li>
+        <li><b>Typing and spelling drain energy,</b> especially if you have Dyslexia.</li>
       </ul>
       <p class="stat"><b>About 3x faster.</b> A Stanford study found that speaking is about 3 times faster than typing on a phone. That can cut your typing time by up to two-thirds. <a href="https://news.stanford.edu/stories/2016/08/stanford-study-speech-recognition-faster-texting" rel="noopener" target="_blank">See the study</a></p>
     </div>
@@ -190,18 +203,28 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
       <li><b>No filler words.</b> It removes "um" and "uh" and fixes false starts.</li>
       <li><b>Works where you already write:</b> email, Slack, WhatsApp, ChatGPT, notes, and documents.</li>
       <li><b>Fits the tone of each app.</b> Casual in chat. Professional in email.</li>
-      <li><b>Edit with your voice.</b> Select text and say "shorten this," "make it friendlier," or "translate to Spanish."</li>
+      <li><b>Edit with your voice.</b> Select text and say "shorten this" or "make it friendlier."</li>
+      <li><b>Translate in one step.</b> Select your text and say "translate to Spanish." No copy and paste into another tool.</li>
       <li><b>Speaks your languages.</b> 100+ languages. Mix up to 3 at once, even in one sentence.</li>
     </ul>
   </div>
 </section>
 
-<section class="alt" id="how-it-works">
+<section class="alt" id="compare">
+  <div class="wrap">
+    <h2>Faster isn't enough. <wbr>Clean is what saves time.</h2>
+    <p class="lead">Built-in dictation on Mac or Windows is faster than typing. But then you spend time fixing ums, half sentences, and tone. Typeless cleans it up as you talk, so you review less.</p>
+    <div class="vs-wrap"><table class="vs"><thead><tr><th></th><th scope="col">Typing</th><th scope="col">Built-in dictation</th><th scope="col" class="hl">Typeless</th></tr></thead><tbody><tr><th scope="row">Getting words down</th><td>Slow</td><td>Fast</td><td class="hl">Fast</td></tr><tr><th scope="row">Ums and false starts</th><td>—</td><td>Typed as you said them</td><td class="hl">Removed for you</td></tr><tr><th scope="row">Tone for each app</th><td>By hand</td><td>By hand</td><td class="hl">Automatic</td></tr><tr><th scope="row">Edit and translate by voice</th><td>No</td><td>Limited</td><td class="hl">Yes</td></tr><tr><th scope="row">What you fix before sending</th><td>Typos</td><td>Ums, tone, half sentences</td><td class="hl">A quick check</td></tr></tbody></table></div>
+    <p class="vs-note">Built-in dictation = Apple Dictation on Mac or Windows voice typing.</p>
+  </div>
+</section>
+
+<section id="how-it-works">
   <div class="wrap grid2 flip">
     <div>
       <h2>How it works: 3 simple steps</h2>
       <ol class="steps">
-        <li><b>Install.</b> Get the app for macOS, Windows, iOS, or Android.</li>
+        <li><b>Download from the Typeless website.</b> Use <a href="https://www.typeless.com/?via=NiceJobs" rel="sponsored noopener" target="_blank">our link</a> to go to the Typeless website. Download it and install it on your computer first (Mac or Windows). Then add it to your phone, iPad, and other devices with the same account.</li>
         <li><b>Speak.</b> Click into any text box. Talk like you would to a colleague.</li>
         <li><b>Send.</b> Typeless gives you clean text. Review it and hit send.</li>
       </ol>
@@ -210,7 +233,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
   </div>
 </section>
 
-<section id="who-its-for">
+<section class="alt" id="who-its-for">
   <div class="wrap">
     <h2>Who Typeless is for</h2>
     <div class="cards">
@@ -233,7 +256,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
         </ul>
       </article>
       <article class="card">
-        <h3>People who dislike typing or have dyslexia</h3>
+        <h3>People who dislike typing or have Dyslexia</h3>
         <ul class="checks">
           <li>Say it instead of spelling it.</li>
           <li>Spend your energy on ideas, not keystrokes.</li>
@@ -241,9 +264,9 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
         </ul>
       </article>
       <article class="card">
-        <h3>Bilingual users (English and Spanish)</h3>
+        <h3>Bilingual users (English, Spanish, Chinese, etc.)</h3>
         <ul class="checks">
-          <li>Write in both languages with one tool.</li>
+          <li>Write in all your languages with one tool.</li>
           <li>Mix English, Spanish, and a third language in one sentence.</li>
           <li>Translate selected text with a voice command.</li>
         </ul>
@@ -252,7 +275,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
   </div>
 </section>
 
-<section class="alt" id="dictate-to-ai">
+<section id="dictate-to-ai">
   <div class="wrap">
     <div class="grid2">
       <div>
@@ -338,6 +361,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
     <h2>Your voice is your fastest keyboard</h2>
     <p class="lead">Write emails, proposals, resumes, and AI prompts by talking. Try Typeless free today.</p>
     <a class="btn" href="https://www.typeless.com/?via=NiceJobs" rel="sponsored noopener" target="_blank">Try Typeless Free</a>
+    <p class="tip">Tip: get Typeless from its website through our link and install it on your computer first. Then add your phone, iPad, and other devices with the same account.</p>
   </div>
 </section>
 

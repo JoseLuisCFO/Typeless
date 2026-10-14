@@ -140,6 +140,18 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
 :lang(ja) h1,:lang(ja) h2,:lang(ja) h3,:lang(zh) h1,:lang(zh) h2,:lang(zh) h3{word-break:keep-all;overflow-wrap:anywhere}
 @media(max-width:480px){.topbar .logo{font-size:16px}.topbar .lang{font-size:13px}.topbar .lang a{padding:4px 1px}}
 @media(max-width:350px){.topbar .logo{display:none}.topbar .wrap{justify-content:center}}
+.tip{font-size:15px;line-height:1.5;color:#115e59;font-weight:600;margin:12px auto 0;max-width:640px}
+.vs-wrap{overflow-x:auto;margin-top:8px}
+table.vs{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--line);font-size:17px;line-height:1.45}
+table.vs th,table.vs td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+table.vs thead th{background:#f8fafc;font-size:16px}
+table.vs tbody tr:last-child th,table.vs tbody tr:last-child td{border-bottom:0}
+table.vs tbody th{font-weight:700;width:30%}
+table.vs .hl{background:var(--good);font-weight:700;color:#14532d}
+table.vs thead .hl{background:var(--brand);color:#fff}
+.vs-note{font-size:14px;color:var(--muted);margin:12px 0 0}
+table.vs{table-layout:fixed}table.vs thead th:nth-child(1){width:26%}table.vs thead th:nth-child(2){width:20%}table.vs thead th:nth-child(3){width:25%}table.vs thead th:nth-child(4){width:29%}table.vs th,table.vs td{overflow-wrap:break-word}
+@media(max-width:600px){table.vs,table.vs thead th{font-size:13px}table.vs th,table.vs td{padding:10px 5px;hyphens:auto}}
 </style>
 </head>
 <body>
@@ -160,6 +172,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
     <h1>AI語音輸入App：<wbr>開口說話，<wbr>就變成<wbr>通順的文字</h1>
     <p class="lead">Typeless把你的聲音，在幾乎所有App中變成可以直接送出的文字。自動刪掉「嗯」「那個」，不用再重打。</p>
     <a class="btn" href="https://www.typeless.com/?via=NiceJobs" rel="sponsored noopener" target="_blank">免費試用Typeless</a>
+    <p class="tip">小提醒：透過我們的連結到Typeless官網下載，先安裝在電腦上，再用同一個帳號加裝手機、iPad和其他裝置。</p>
     <p class="disclosure">【廣告】我們每天都在用Typeless，因為好用才推薦。透過此連結註冊，我們會獲得推薦佣金，你不需要支付任何額外費用。</p>
     <img src="/images/yuyin-shuru-ai.webp" width="1600" height="900" alt="插圖：輕鬆說話的女性，機器人助理在電腦上為她展示可以直接送出的文字。別再打字了。開口就好。" fetchpriority="high">
   </div>
@@ -189,18 +202,28 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
       <li><b>自動刪掉「嗯」「那個」。</b>說錯重講的地方也會幫你整理好。</li>
       <li><b>在你常用的App裡就能用：</b>Email、Slack、LINE、WhatsApp、ChatGPT、筆記和文件。</li>
       <li><b>依照App調整語氣。</b>聊天時輕鬆，寫Email時正式。</li>
-      <li><b>用聲音編輯。</b>選取文字後說「縮短一點」「語氣客氣一點」或「翻譯成英文」就好。</li>
+      <li><b>用聲音編輯。</b>選取文字後說「縮短一點」或「語氣客氣一點」就好。</li>
+      <li><b>一步完成翻譯。</b>選取文字後說「翻譯成英文」，不用再複製貼上到其他工具。</li>
       <li><b>支援超過100種語言。</b>中文、英文等最多3種語言，同一句話裡也能混著說。</li>
     </ul>
   </div>
 </section>
 
-<section class="alt" id="how-it-works">
+<section class="alt" id="compare">
+  <div class="wrap">
+    <h2>快還不夠，<wbr>乾淨才能<wbr>真正省時間。</h2>
+    <p class="lead">Mac或Windows內建的語音輸入比打字快，但之後你還是要花時間刪贅字、修正講錯的句子、調整語氣。Typeless在你說話的同時就整理好，讓你少花時間檢查。</p>
+    <div class="vs-wrap"><table class="vs"><thead><tr><th></th><th scope="col">打字</th><th scope="col">內建語音輸入</th><th scope="col" class="hl">Typeless</th></tr></thead><tbody><tr><th scope="row">把文字打出來</th><td>慢</td><td>快</td><td class="hl">快</td></tr><tr><th scope="row">「嗯」和講錯重說</th><td>—</td><td>照打出來</td><td class="hl">自動刪除</td></tr><tr><th scope="row">依App調整語氣</th><td>手動</td><td>手動</td><td class="hl">自動</td></tr><tr><th scope="row">用聲音編輯和翻譯</th><td>不行</td><td>有限</td><td class="hl">可以</td></tr><tr><th scope="row">送出前要修改的</th><td>錯字</td><td>贅字、語氣、斷句</td><td class="hl">快速確認就好</td></tr></tbody></table></div>
+    <p class="vs-note">內建語音輸入＝Mac的Apple聽寫，或Windows語音輸入。</p>
+  </div>
+</section>
+
+<section id="how-it-works">
   <div class="wrap grid2 flip">
     <div>
       <h2>只要<wbr>3個步驟</h2>
       <ol class="steps">
-        <li><b>安裝。</b>支援macOS、Windows、iOS和Android。</li>
+        <li><b>從Typeless官網下載。</b>透過<a href="https://www.typeless.com/?via=NiceJobs" rel="sponsored noopener" target="_blank">我們的連結</a>前往Typeless官網，先下載並安裝到電腦（Mac或Windows），再用同一個帳號加裝到手機、iPad和其他裝置。</li>
         <li><b>說話。</b>點一下任何輸入框，像跟同事說話一樣自然地說。</li>
         <li><b>送出。</b>確認Typeless整理好的文字，直接送出。</li>
       </ol>
@@ -209,7 +232,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
   </div>
 </section>
 
-<section id="who-its-for">
+<section class="alt" id="who-its-for">
   <div class="wrap">
     <h2>Typeless<wbr>適合這些人</h2>
     <div class="cards">
@@ -240,9 +263,9 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
         </ul>
       </article>
       <article class="card">
-        <h3>中英文<wbr>都要用的人</h3>
+        <h3>使用多種語言的人<wbr>（英文、中文、日文等）</h3>
         <ul class="checks">
-          <li>一個工具，中文英文都搞定。</li>
+          <li>一個工具，多種語言都搞定。</li>
           <li>中文、英文，再加一種語言，同一句話裡也能混用。</li>
           <li>選取文字，用語音指令就能翻譯。</li>
         </ul>
@@ -251,7 +274,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
   </div>
 </section>
 
-<section class="alt" id="dictate-to-ai">
+<section id="dictate-to-ai">
   <div class="wrap">
     <div class="grid2">
       <div>
@@ -337,6 +360,7 @@ footer .lang a[aria-current="page"]{color:#fff;border-bottom-color:#2dd4bf}
     <h2>你的聲音，<wbr>就是最快的<wbr>鍵盤</h2>
     <p class="lead">Email、提案、履歷、給AI的提示詞，全部用說的就好。今天就免費試用Typeless。</p>
     <a class="btn" href="https://www.typeless.com/?via=NiceJobs" rel="sponsored noopener" target="_blank">免費試用Typeless</a>
+    <p class="tip">小提醒：透過我們的連結到Typeless官網下載，先安裝在電腦上，再用同一個帳號加裝手機、iPad和其他裝置。</p>
   </div>
 </section>
 
